@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+table {
+    margin: 0 auto;
+}
+
+#lists {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#lists td, #lists th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#lists tr:nth-child(even){background-color: #f2f2f2f2;}
+  
+#lists tr:hover {background-color: #dddd;}
+  
+#lists th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0078d7;
+    color: white;
+}
+
+h3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
