@@ -112,6 +112,10 @@ nav ul li a:hover {
     font-size: 2.5rem;
 }
 
+.buttons a{
+    text-decoration: none;
+}
+
 .leftsection .btn {
     background-color: rgb(12, 12, 31);
     color: white;
