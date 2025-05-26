@@ -9,6 +9,8 @@
     <title>Asad - Developer Portfolio</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <!-- javaScript -->
+    <link rel="stylesheet" href="script.js">
     <!-- favicon -->
     <link rel="shortcut icon" href="Assets/Images/05. portfolio-favicon.png" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -25,34 +27,34 @@
             </div>
 
             <div class="right">
-                <ul class="navigation">
-                    <li><a href="#">Home</a></li>
+                <ul class="navigation" onclick="open()">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                
-                <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+
+                <ion-icon name="menu-outline" class="menuToggle" onclick="toggleMenu()"></ion-icon>
             </div>
         </nav>
-    </header> 
+    </header>
     <main>
         <section class="profilesection">
             <div class="avatar">
-                <img src="01. Logo-image1.jpeg" alt="" width="100">
+                <img src="avatar.jpeg" alt="" width="100">
             </div>
             <div>Asad Ullah</div>
             <div class="profession">
                 <span class="element textgrey"></span>
             </div>
             <div>
-
-                <a href=""><i class='bx bxl-linkedin'></i></a>
-                <a href=""><i class='bx bxl-github'></i></a>
-                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/asad-ullahh/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/asadullah52003" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://twitter.com/Asadullah52003" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/asadullah52003/?hl=en" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
                 <a href=""><i class='bx bx-envelope'></i></a>
-                <a href=""><i class='bx bxl-instagram'></i></a>
             </div>
         </section>
         <section class="firstsection">
@@ -84,6 +86,11 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
+        function toggleMenu() {
+            const header = document.querySelector('header');
+            header.classList.toggle('open');
+        }
+
         var typed = new Typed('#element', {
             strings: ['💻 Web Developer', 'Video Editor', 'Associate Engineer'],
             typeSpeed: 40,
