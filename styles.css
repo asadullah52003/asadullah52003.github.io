@@ -1,44 +1,238 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-}
-
-table {
-    margin: 0 auto;
-}
-
-#lists {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-#lists td, #lists th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-  
-#lists tr:nth-child(even){background-color: #f2f2f2f2;}
-  
-#lists tr:hover {background-color: #dddd;}
-  
-#lists th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #0078d7;
+    background-color: rgb(8, 5, 30);
+    font-family: sans-serif;
     color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-h3 {
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
+/* header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(12, 12, 31);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 5px rgb(33, 26, 54);
+} */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgb(12, 12, 31);
+
+}
+
+nav .left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav ul li a:hover {
+    font-size: 1.02rem;
+}
+
+.profilesection img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profilesection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+    font-size: 1.5rem;
+    color: rgb(202, 200, 200);
+}
+
+.profilesection .profession {
+    font-size: 15px;
+}
+
+.profilesection a {
+    text-decoration: none;
+    color: gray;
+    padding: 4px;
+    font-size: 20px;
+
+}
+
+.profilesection a:hover {
+    color: #fff;
+    font-size: 18px;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0;
+    align-items: center;
+
+}
+
+.firstsection>div {
     width: 30%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+}
+
+.leftsection {
+
+    font-size: 3rem;
+}
+
+.leftsection .btn {
+    background-color: rgb(12, 12, 31);
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.leftsection .btn:hover {
+    background-color: rgb(20, 20, 47);
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.rightsection img {
+    width: 80%;
+}
+
+.textpurple {
+    color: rgb(142, 70, 209);
+}
+
+.textgrey {
+    color: rgb(157, 117, 193);
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(20, 20, 44);
+    height: 2.5px;
+    margin: 40px 90px;
+}
+
+footer {
+    background: rgb(12, 12, 31);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuToggle {
+    position: relative;
+    display: none;
+}
+
+footer .footericons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footericons a:hover {
+    font-size: 10px;
+}
+
+@media (max-width: 800px) {
+    .searchBtn {
+        left: 0;
+    }
+
+    .menuToggle {
+        position: absolute;
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+    }
+
+    header .navigation {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+
+    header.open .navigation {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(88, 76, 168);
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid gray;
+    }
+
+    header.open .navigation li a {
+        font-size: 1.25em;
+
+    }
+
+    .hide {
+        display: none;
+        transition: 0.5s ease-in-out;
+    }
 }
