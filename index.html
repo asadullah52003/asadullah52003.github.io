@@ -2,219 +2,272 @@
 <html lang="en">
 
 <head>
-  <meta name="keyword" content="Asad Ullah, asad ullah khan, asad ullah name meaning in urdu, asad ullah faiz">
-  <meta name="author" content="Asad Ullah">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asad - Developer Portfolio</title>
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- javaScript -->
-  <link rel="stylesheet" href="script.js">
-  <!-- favicon -->
-  <link rel="shortcut icon" href="Assets/Images/05. portfolio-favicon.png" type="image/x-icon">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <!-- Use Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asad Ullah - Web Developer & Video Editor Portfolio</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Portfolio of Asad Ullah – a Web Developer and Video Editor showcasing projects, blogs, resume, and more." />
+    <meta name="author" content="Asad Ullah" />
+    <link rel="canonical" href="https://asadullah52003.github.io/" />
+
+    <!-- Social Sharing -->
+    <meta property="og:title" content="Asad Ullah - Developer Portfolio" />
+    <meta property="og:description" content="Portfolio of Asad Ullah – Web Developer and Video Editor" />
+    <meta property="og:image" content="Assets/Images/04. developer-image1.webp" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/Images/05. portfolio-favicon.png" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Scripts -->
+    <script defer src="script.js"></script>
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Asad Ullah",
+      "jobTitle": "Web Developer & Video Editor",
+      "url": "https://asadullah52003.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/asad-ullahh/",
+        "https://github.com/asadullah52003",
+        "https://twitter.com/Asadullah52003",
+        "mailto:uasad52003@gmail.com"
+      ]
+    }
+  </script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="left">
-        <h1>Asad's Blogs</h1>
-      </div>
+    <header>
+        <nav>
+            <div class="left">
+                <h1>Asad's Blogs</h1>
+            </div>
 
-      <div class="right">
-        <ul class="navigation">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blogs">Blogs</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+            <div class="right">
+                <ul class="navigation">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-        <ion-icon name="menu-outline" class="menuToggle" onclick="toggleMenu()"></ion-icon>
-        <!-- <button class="theme-toggle" onclick="toggleTheme()">🌙</button> -->
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section id="home" class="profilesection">
-      <div class="avatar">
-        <img src="avatar.jpeg" alt="" width="100">
-      </div>
-      <div>Asad Ullah</div>
-      <div class="profession">
-        <span class="element textgrey"></span>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/asad-ullahh/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/asadullah52003" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://twitter.com/Asadullah52003" target="_blank"><i class='bx bxl-twitter'></i></a>
-        <a href="https://www.instagram.com/asadullah52003/?hl=en" target="_blank"><i class='bx bxl-instagram'></i></a>
-        <a href="mailto:uasad52003@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
-      </div>
-    </section>
-    <section class="firstsection">
-      <div class="leftsection">
-        Hi, My name is <span class="textpurple">Asad</span>
-        <div>and I am a Passionate</div>
-        <span id="element" class="textpurple"></span>
-        <div class="buttons">
-          <a href="Asad Ullah Resume.pdf" target="_blank">
-            <button class="btn1 btn">Download Resume</button>
-          </a>
-          <a href="https://github.com/asadullah52003" target="_blank">
-            <button class="btn2 btn">Visit Github Profile</button>
-          </a>
+                <ion-icon name="menu-outline" class="menuToggle" onclick="toggleMenu()"></ion-icon>
+                <!-- <button class="theme-toggle" onclick="toggleTheme()">🌙</button> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="profilesection">
+                <div class="avatar">
+                    <img src="avatar.jpeg" alt="Asad Avatar" width="100">
+                </div>
+                <div>Asad Ullah</div>
+                <div class="profession">
+                    <span class="element textgrey"></span>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/asad-ullahh/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/asadullah52003" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://twitter.com/Asadullah52003" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/asadullah52003/?hl=en" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="mailto:uasad52003@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+
+            <div class="firstsection">
+                <div class="leftsection">
+                    Hi, My name is <span class="textpurple">Asad</span>
+                    <div>and I am a Passionate</div>
+                    <span id="element" class="textpurple"></span>
+                    <div class="buttons">
+                        <a href="Asad Ullah Resume.pdf" target="_blank">
+                            <button class="btn1 btn">Download Resume</button>
+                        </a>
+                        <a href="https://github.com/asadullah52003" target="_blank">
+                            <button class="btn2 btn">Visit Github Profile</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="rightsection">
+                    <img src="Assets/Images/04. developer-image1.webp" alt="Developer Image">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <div class="box"></div>
+        </section>
+
+        <section id="blogs" class="blogsection">
+            <h2>My Blogs</h2>
+            <div class="blog-container">
+
+                <article class="blog-post">
+                    <img src="https://img.freepik.com/free-psd/3d-rendering-interface-icon_23-2151553996.jpg?semt=ais_hybrid&w=740"
+                        alt="HTML Blog Image">
+                    <div class="blog-meta">
+                        <span class="tag">HTML</span>
+                        <span class="date">May 1, 2025</span>
+                    </div>
+                    <h3>Understanding HTML: The Backbone of the Web</h3>
+                    <p>HTML is the foundation of all webpages. This post covers the structure, tags, and real-world
+                        usage of HTML.
+                    </p>
+                </article>
+
+                <article class="blog-post">
+                    <img src="https://img.freepik.com/free-vector/advanced-computer-skills-abstract-concept-illustration_335657-2255.jpg?ga=GA1.1.642805125.1748355475&semt=ais_hybrid&w=740"
+                        alt="CSS Blog Image">
+                    <div class="blog-meta">
+                        <span class="tag">CSS</span>
+                        <span class="date">May 4, 2025</span>
+                    </div>
+                    <h3>CSS: Styling the Web with Elegance</h3>
+                    <p>CSS controls the look and feel of websites. Learn about layout systems, animations, and media
+                        queries in
+                        this post.</p>
+                </article>
+
+                <article class="blog-post">
+                    <img src="https://img.freepik.com/free-vector/hip-hop-icon-set_1284-34558.jpg?ga=GA1.1.642805125.1748355475&semt=ais_hybrid&w=740"
+                        alt="Hip Hop Blog Image">
+                    <div class="blog-meta">
+                        <span class="tag">Music</span>
+                        <span class="date">May 6, 2025</span>
+                    </div>
+                    <h3>Pakistan’s Hip Hop Industry: A Cultural Revolution</h3>
+                    <p>From underground battles to viral hits, explore how Pakistan’s hip hop scene is making waves in
+                        youth
+                        culture.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="about" class="aboutsection">
+            <h2>About Me</h2>
+            <p>Hello! I'm Asad Ullah, a passionate Web Developer and Video Editor. I enjoy building modern websites and
+                solving real-world problems through technology.</p>
+        </section>
+
+        <hr>
+
+        <section id="projects" class="projectsection">
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <article class="project-card">
+                    <img src="Assets/Images/project1.jpg" alt="Movies I Like">
+                    <h3>Movies I Like</h3>
+                    <p>A curated list of my favorite movies with ratings and reviews.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="Assets/Images/project2.jpg" alt="Netflix Clone">
+                    <h3>Netflix Clone</h3>
+                    <p>A front-end replica of Netflix with responsive UI and movie listings.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="Assets/Images/project3.jpg" alt="Todo List">
+                    <h3>Todo List</h3>
+                    <p>A simple and intuitive todo app to keep track of daily tasks.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="Assets/Images/project4.jpg" alt="Ultra Edit Website Clone">
+                    <h3>Ultra Edit Website Clone</h3>
+                    <p>A clone of Ultra Edit’s website showcasing layout and UI skills.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="Assets/Images/project5.jpg" alt="Country Info Project">
+                    <h3>Country Info Project</h3>
+                    <p>An app providing detailed info about countries using APIs.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="Assets/Images/project6.jpg" alt="Card Layout">
+                    <h3>Card Layout</h3>
+                    <p>A stylish card layout project demonstrating CSS grid and flexbox.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact" class="contactsection">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+            <form action="mailto:uasad52003@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Asad Ullah | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/asad-ullahh/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/asadullah52003" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://twitter.com/Asadullah52003" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="mailto:uasad52003@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            </div>
         </div>
-      </div>
-      <div class="rightsection">
-        <img src="Assets/Images/04. developer-image1.webp" alt="">
-      </div>
-    </section>
-    <hr>
-    <section class="secondsection">
-      <div class="box"></div>
-    </section>
-
-    <section id="blogs" class="blogsection">
-      <h2>My Blogs</h2>
-      <div class="blog-container">
-
-        <article class="blog-post">
-          <img
-            src="https://img.freepik.com/free-psd/3d-rendering-interface-icon_23-2151553996.jpg?semt=ais_hybrid&w=740"
-            alt="HTML Blog Image">
-          <div class="blog-meta">
-            <span class="tag">HTML</span>
-            <span class="date">May 1, 2025</span>
-          </div>
-          <h3>Understanding HTML: The Backbone of the Web</h3>
-          <p>HTML is the foundation of all webpages. This post covers the structure, tags, and real-world usage of HTML.
-          </p>
-        </article>
-
-        <article class="blog-post">
-          <img
-            src="https://img.freepik.com/free-vector/advanced-computer-skills-abstract-concept-illustration_335657-2255.jpg?ga=GA1.1.642805125.1748355475&semt=ais_hybrid&w=740"
-            alt="CSS Blog Image">
-          <div class="blog-meta">
-            <span class="tag">CSS</span>
-            <span class="date">May 4, 2025</span>
-          </div>
-          <h3>CSS: Styling the Web with Elegance</h3>
-          <p>CSS controls the look and feel of websites. Learn about layout systems, animations, and media queries in
-            this post.</p>
-        </article>
-
-        <article class="blog-post">
-          <img
-            src="https://img.freepik.com/free-vector/hip-hop-icon-set_1284-34558.jpg?ga=GA1.1.642805125.1748355475&semt=ais_hybrid&w=740"
-            alt="Hip Hop Blog Image">
-          <div class="blog-meta">
-            <span class="tag">Music</span>
-            <span class="date">May 6, 2025</span>
-          </div>
-          <h3>Pakistan’s Hip Hop Industry: A Cultural Revolution</h3>
-          <p>From underground battles to viral hits, explore how Pakistan’s hip hop scene is making waves in youth
-            culture.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="about" class="aboutsection">
-      <h2>About Me</h2>
-      <p>Hello! I'm Asad Ullah, a passionate Web Developer and Video Editor. I enjoy building modern websites and
-        solving real-world problems through technology.</p>
-    </section>
-
-    <section id="projects" class="projectsection">
-      <h2>My Projects</h2>
-      <div class="project-container">
-        <article class="project-card">
-          <img src="Assets/Images/project1.jpg" alt="Movies I Like">
-          <h3>Movies I Like</h3>
-          <p>A curated list of my favorite movies with ratings and reviews.</p>
-        </article>
-
-        <article class="project-card">
-          <img src="Assets/Images/project2.jpg" alt="Netflix Clone">
-          <h3>Netflix Clone</h3>
-          <p>A front-end replica of Netflix with responsive UI and movie listings.</p>
-        </article>
-
-        <article class="project-card">
-          <img src="Assets/Images/project3.jpg" alt="Todo List">
-          <h3>Todo List</h3>
-          <p>A simple and intuitive todo app to keep track of daily tasks.</p>
-        </article>
-
-        <article class="project-card">
-          <img src="Assets/Images/project4.jpg" alt="Ultra Edit Website Clone">
-          <h3>Ultra Edit Website Clone</h3>
-          <p>A clone of Ultra Edit’s website showcasing layout and UI skills.</p>
-        </article>
-
-        <article class="project-card">
-          <img src="Assets/Images/project5.jpg" alt="Country Info Project">
-          <h3>Country Info Project</h3>
-          <p>An app providing detailed info about countries using APIs.</p>
-        </article>
-
-        <article class="project-card">
-          <img src="Assets/Images/project6.jpg" alt="Card Layout">
-          <h3>Card Layout</h3>
-          <p>A stylish card layout project demonstrating CSS grid and flexbox.</p>
-        </article>
-      </div>
-    </section>
+    </footer>
 
 
-    <section id="contact" class="contactsection">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-      <form action="mailto:uasad52003@gmail.com" method="POST" enctype="text/plain" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <div class="footericons">
-      <a href=""><img src="Assets/icons/location.png" alt="" width="20"></a>
-      <a href=""><img src="Assets/icons/phone-call.png" alt="" width="20"></i></a>
-    </div>
-  </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        function toggleMenu() {
+            const header = document.querySelector('header');
+            header.classList.toggle('open');
+        }
 
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <!-- Setup and start animation! -->
-  <script>
-    function toggleMenu() {
-      const header = document.querySelector('header');
-      header.classList.toggle('open');
-    }
-
-    var typed = new Typed('#element', {
-      strings: ['💻 Web Developer', 'Video Editor', 'Associate Engineer'],
-      typeSpeed: 40,
-      showCursor: true,
-      onComplete: function (self) {
-        document.querySelectorAll(".typed-cursor").forEach(cursor => {
-          cursor.classList.add("hidden");
+        var typed = new Typed('#element', {
+            strings: ['💻 Web Developer', 'Video Editor', 'Associate Engineer'],
+            typeSpeed: 40,
+            showCursor: true,
+            onComplete: function (self) {
+                document.querySelectorAll(".typed-cursor").forEach(cursor => {
+                    cursor.classList.add("hidden");
+                });
+            }
         });
-      }
-    });
-    let typing = new Typed('.element', {
-      strings: ['💻 Web Developer', '📽️Video Editor', '🛠️Associate Engineer'],
-      typeSpeed: 30,
-    });
-  </script>
+        let typing = new Typed('.element', {
+            strings: ['💻 Web Developer', '📽️Video Editor', '🛠️Associate Engineer'],
+            typeSpeed: 30,
+        });
+    </script>
 
 </body>
 
