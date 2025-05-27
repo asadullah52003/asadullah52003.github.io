@@ -83,6 +83,36 @@ nav ul li a:hover {
     display: none !important;
 }
 
+/* Hero Section Styling */
+
+.hero {
+    position: relative;
+    background: url('https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&w=600') center center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.hero .profilesection,
+.hero .firstsection {
+    position: relative;
+    z-index: 2;
+}
+
 /* Profile Section */
 .profilesection {
     display: flex;
@@ -95,10 +125,15 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* Avatar SAtyling */
+
 .profilesection img {
     width: 100px;
     border-radius: 50%;
+    border: 2px solid white;
 }
+
+/*Social Links Styling */
 
 .profilesection a {
     text-decoration: none;
@@ -106,11 +141,12 @@ nav ul li a:hover {
     font-size: 20px;
     padding: 4px;
     transition: color 0.3s ease, font-size 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .profilesection a:hover {
     color: #fff;
-    font-size: 18px;
+    transform: scale(1.2);
 }
 
 /* First Section */
@@ -119,7 +155,7 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 70px 20px;
+    margin: 40px 20px;
     gap: 40px;
 }
 
@@ -129,7 +165,9 @@ nav ul li a:hover {
 }
 
 .leftsection {
+    text-align: center;
     font-size: 2.5rem;
+    flex: 1;
 }
 
 .buttons a {
@@ -476,19 +514,40 @@ main hr {
 /* Footer */
 footer {
     background: rgb(12, 12, 31);
-    padding: 20px;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.social-links {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 15px;
 }
 
-.footericons {
-    display: flex;
-    gap: 10px;
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
 }
 
-.footericons a:hover {
-    font-size: 10px;
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
 }
 
 /* Menu Toggle */
