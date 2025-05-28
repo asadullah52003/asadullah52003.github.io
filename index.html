@@ -23,7 +23,7 @@
     <link rel="icon" href="Assets/Images/05. portfolio-favicon.png" type="image/x-icon" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Scripts -->
     <script defer src="script.js"></script>
@@ -245,30 +245,8 @@
         </div>
     </footer>
 
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
-    <script>
-        function toggleMenu() {
-            const header = document.querySelector('header');
-            header.classList.toggle('open');
-        }
-
-        var typed = new Typed('#element', {
-            strings: ['💻 Web Developer', 'Video Editor', 'Associate Engineer'],
-            typeSpeed: 40,
-            showCursor: true,
-            onComplete: function (self) {
-                document.querySelectorAll(".typed-cursor").forEach(cursor => {
-                    cursor.classList.add("hidden");
-                });
-            }
-        });
-        let typing = new Typed('.element', {
-            strings: ['💻 Web Developer', '📽️Video Editor', '🛠️Associate Engineer'],
-            typeSpeed: 30,
-        });
-    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 </body>
 
